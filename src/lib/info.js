@@ -8,7 +8,7 @@ export const website = 'https://aazar.me'
 export const name = 'aazar.me'
 
 // Used for the landing page & footer of posts
-export const avatar = 'https://firebasestorage.googleapis.com/v0/b/aazar-d32a4.appspot.com/o/aazar.png?alt=media&token=edc646b9-76b1-469c-b3b5-33fdff21f7b4'
+export const avatar = 'https://firebasestorage.googleapis.com/v0/b/aazar-d32a4.appspot.com/o/aazar.webp?alt=media&token=3a534bdd-4d37-4679-b43c-09e90c0853e5'
 export const bio = `\
 Hey there! I’m Aazar, a python developer who loves to code and create awesome things 🐍. I’ve been using python to solve real world problems since I dropped out of school 🎓, and I’ve built some amazing projects that you can check out on my github 🚀. I also have a global rank 1 in python on HackerRank 🏆, which is a platform where you can practice your coding skills and compete with others. On this blog, I share my insights on programming 💻, tutorials for various tech stacks 📚 and some fun stuff about life 😊. Thanks for visiting my page 👋, I’d love to hear from you so feel free to send me a message 💬. Let’s be friends! 😃
 `
