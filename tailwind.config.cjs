@@ -3,7 +3,17 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts,md,svx}'],
   plugins: [require('@tailwindcss/typography')],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'blink': 'blink 3s ease-in-out infinite',
+      },
+      keyframes: {
+        'blink': {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0.8 },
+        },
+      },
+    },
     fontSize: {
       xs: ['0.8125rem', { lineHeight: '1.5rem' }],
       sm: ['0.875rem', { lineHeight: '1.5rem' }],
