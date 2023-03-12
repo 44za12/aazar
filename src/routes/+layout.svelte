@@ -28,8 +28,9 @@ const firebaseConfig = {
     messagingSenderId: "975158756438",
     appId: "1:975158756438:web:a1dc0cb402e38686e327f7",
     measurementId: "G-LW3RWM76EE"
-  };
-
+};
+let app = null;
+let analytics = null;
 isSupported().then((result) => {
     if (result) {
         app = initializeApp(firebaseConfig);
