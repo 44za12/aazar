@@ -15,7 +15,7 @@
       document.documentElement.classList.remove('[&_*]:!transition-none')
     }, 0)
   }
-  // remove this if you do not want your pages to be prerendered
+import { onMount } from 'svelte'
 import { initializeApp } from "firebase/app";
 import { getAnalytics, logEvent, isSupported } from "firebase/analytics";
 
@@ -31,11 +31,9 @@ const firebaseConfig = {
 };
 let app = null;
 let analytics = null;
-isSupported().then((result) => {
-    if (result) {
-        app = initializeApp(firebaseConfig);
-        analytics = getAnalytics(app);
-    }
+onMount(() => {
+  app = initializeApp(firebaseConfig);
+  getAnalytics(app);
 })
 </script>
 
