@@ -8,7 +8,7 @@ export const website = 'https://aazar.me'
 export const name = 'aazar.me'
 
 // Used for the landing page & footer of posts
-export const avatar = 'aazar.webp'
+export const avatar = '/aazar.webp'
 export const bio = `\
 Hey there! I’m Aazar, a python developer who loves to code and create awesome things 🐍. I’ve been using python to solve real world problems since I dropped out of school 🎓, and I’ve built some amazing projects that you can check out on my github 🚀. I also have a global rank 1 in python on HackerRank 🏆, which is a platform where you can practice your coding skills and compete with others. On this blog, I share my insights on programming 💻, tutorials for various tech stacks 📚 and some fun stuff about life 😊. Thanks for visiting my page 👋, I’d love to hear from you so feel free to send me a message 💬. Let’s be friends! 😃
 `
