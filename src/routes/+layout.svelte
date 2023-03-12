@@ -16,8 +16,7 @@
     }, 0)
   }
 import { onMount } from 'svelte'
-import { initializeApp } from "firebase/app";
-import { getAnalytics, logEvent, isSupported } from "firebase/analytics";
+import * as firebase from "firebase/app";
 
 const firebaseConfig = {
     apiKey: "AIzaSyB53g8nKGUhAncw57fgUyNpMyioF4tLCyc",
@@ -29,11 +28,11 @@ const firebaseConfig = {
     appId: "1:975158756438:web:a1dc0cb402e38686e327f7",
     measurementId: "G-LW3RWM76EE"
 };
-let app = null;
 let analytics = null;
 onMount(() => {
-  app = initializeApp(firebaseConfig);
-  getAnalytics(app);
+  firebase.initializeApp(firebaseConfig);
+  analytics = firebase.analytics();
+  analytics.logEvent('started_logging');
 })
 </script>
 
