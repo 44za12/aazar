@@ -15,6 +15,27 @@
       document.documentElement.classList.remove('[&_*]:!transition-none')
     }, 0)
   }
+  // remove this if you do not want your pages to be prerendered
+import { initializeApp } from "firebase/app";
+import { getAnalytics, logEvent, isSupported } from "firebase/analytics";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyB53g8nKGUhAncw57fgUyNpMyioF4tLCyc",
+    authDomain: "aazar-d32a4.firebaseapp.com",
+    databaseURL: "https://aazar-d32a4-default-rtdb.firebaseio.com",
+    projectId: "aazar-d32a4",
+    storageBucket: "aazar-d32a4.appspot.com",
+    messagingSenderId: "975158756438",
+    appId: "1:975158756438:web:a1dc0cb402e38686e327f7",
+    measurementId: "G-LW3RWM76EE"
+  };
+
+isSupported().then((result) => {
+    if (result) {
+        app = initializeApp(firebaseConfig);
+        analytics = getAnalytics(app);
+    }
+})
 </script>
 
 <div class="flex flex-col min-h-screen ">
