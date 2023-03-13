@@ -8,15 +8,31 @@ if (browser) {
   throw new Error(`posts can only be imported server-side`)
 }
 
+const tags = {}
 // Get all posts and add metadata
-export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true }))
+const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true }))
   .map(([filepath, post]) => {
     const html = parse(post.default.render().html)
     const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector('p')
-
+    const tagsOfPost = post.metadata.tag.split(",")
+    console.log(tagsOfPost)
+    tagsOfPost.forEach(tag => {
+      if (tags[tag]) {
+        tags[tag].push(filepath
+        .replace(/(\/index)?\.md/, '')
+        .split('/')
+        .pop())
+      } else {
+        tags[tag] = [filepath
+          .replace(/(\/index)?\.md/, '')
+          .split('/')
+          .pop()]
+      }
+    })
     return {
       ...post.metadata,
 
+      tags: tagsOfPost,
       // generate the slug from the file path
       slug: filepath
         .replace(/(\/index)?\.md/, '')
@@ -26,7 +42,6 @@ export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: 
       // whether or not this file is `my-post.md` or `my-post/index.md`
       // (needed to do correct dynamic import in posts/[slug].svelte)
       isIndexFile: filepath.endsWith('/index.md'),
-
       // format date as yyyy-MM-dd
       date: post.metadata.date
         ? format(
@@ -54,6 +69,8 @@ export const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: 
     next: allPosts[index - 1],
     previous: allPosts[index + 1]
   }))
+
+export {posts, tags}
 
 function addTimezoneOffset(date) {
   const offsetInMilliseconds = new Date().getTimezoneOffset() * 60 * 1000

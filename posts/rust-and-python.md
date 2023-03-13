@@ -2,6 +2,7 @@
 title: Rust And Python - A match made in heavens
 date: 2023-03-11
 author: Aazar
+tag: programming,python,rust
 ---
 
 Rust and Python are two programming languages with very different strengths and weaknesses. Rust is a high-performance systems language that emphasizes safety and speed, while Python is a general-purpose language that prioritizes ease of use and readability.

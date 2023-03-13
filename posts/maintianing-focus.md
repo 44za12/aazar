@@ -2,6 +2,7 @@
 title: Maintianing Focus - In a World Full of Distractions
 date: 2023-03-12
 author: Aazar
+tag: productivity
 ---
 
 ## Distractions

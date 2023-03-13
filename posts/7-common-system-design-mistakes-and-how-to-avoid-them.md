@@ -1,7 +1,8 @@
 ---
 title: 7 Common System Design Mistakes and How to Avoid Them
-date: 2023-03-12
+tag: programming,system design
 author: Aazar
+date: 2023-03-12
 ---
 
 System design is an essential part of any software development project. It involves creating a plan for the architecture, components, and interactions within a software system. A good system design ensures that the software is scalable, maintainable, and meets the requirements of the stakeholders. However, there are several common mistakes that developers make during the system design process that can lead to problems down the line. In this blog, we will discuss the seven common system design mistakes and how to avoid them.

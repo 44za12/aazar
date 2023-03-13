@@ -2,6 +2,7 @@
 title: Some Lesser Known but Extremely Useful Python Functions
 date: 2023-03-11
 author: Aazar
+tag: programming,python
 ---
 
 Python is a versatile and user-friendly programming language that offers a wide range of built-in functions to help developers accomplish various tasks with ease. In addition to the well-known functions, there are several lesser-known yet highly useful functions that can simplify complex tasks and save time. In this article, we'll explore some of these functions and provide code examples to demonstrate their usage.
