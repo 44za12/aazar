@@ -31,7 +31,7 @@
     const visibleIndex =
       elements.findIndex((element) => element.offsetTop + element.clientHeight > scrollY) - 1
 
-    activeHeading = headings[visibleIndex]
+    activeHeading = headings[visibleIndex+1]
 
     const pageHeight = document.body.scrollHeight
     const scrollProgress = (scrollY + window.innerHeight) / pageHeight
