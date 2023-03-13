@@ -19,6 +19,7 @@ export async function load({ params }) {
     posts: postsForPage,
     page,
     limit,
-    tag
+    tag,
+    hasNextPage: (posts.length % (limit * page)) > 10 
   }
 }

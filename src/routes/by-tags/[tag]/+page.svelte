@@ -8,7 +8,6 @@
     export let data
   
     $: isFirstPage = data.page === 1
-    $: hasNextPage = data.posts[data.posts.length - 1]?.previous
   </script>
   
   <svelte:head>
@@ -30,7 +29,7 @@
     <!-- pagination -->
     <div class="flex items-center justify-between pt-16 pb-8">
       {#if !isFirstPage}
-        <a href={`/posts/${data.page - 1}`} data-sveltekit-prefetch>
+        <a href={`/by-tags/${data.tag}/${data.page - 1}`} data-sveltekit-prefetch>
           <ArrowLeftIcon class="w-4 h-4" />
           Previous
         </a>
@@ -38,8 +37,8 @@
         <div />
       {/if}
   
-      {#if hasNextPage}
-        <a href={`/posts/${data.page + 1}`} data-sveltekit-prefetch
+      {#if data.hasNextPage}
+        <a href={`/by-tags/${data.tag}/${data.page + 1}`} data-sveltekit-prefetch
           >Next
           <ArrowRightIcon class="w-4 h-4" />
         </a>

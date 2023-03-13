@@ -15,7 +15,6 @@ const posts = Object.entries(import.meta.glob('/posts/**/*.md', { eager: true })
     const html = parse(post.default.render().html)
     const preview = post.metadata.preview ? parse(post.metadata.preview) : html.querySelector('p')
     const tagsOfPost = post.metadata.tag.split(",")
-    console.log(tagsOfPost)
     tagsOfPost.forEach(tag => {
       if (tags[tag]) {
         tags[tag].push(filepath

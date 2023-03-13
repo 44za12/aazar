@@ -9,7 +9,6 @@ export async function load({ params }) {
   let limit = 10
   const tagWisePosts = posts.filter(post => post.tags.includes(tag))
   const postsForPage = paginate(tagWisePosts, { limit, page })
-
   // if page doesn't exist, 404
   if (postsForPage.length === 0 && page > 1) {
     throw error(404, 'Page not found')
@@ -19,6 +18,7 @@ export async function load({ params }) {
     posts: postsForPage,
     page,
     limit,
-    tag
+    tag,
+    hasNextPage: (posts.length % (limit * page)) > 10 
   }
 }
