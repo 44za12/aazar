@@ -5,3 +5,6 @@ node_modules
 /build
 /public
 *.cache
+keys/
+*timestamp*
+*-debug.log
