@@ -1,6 +1,6 @@
 ---
 title: Unmasking Social Engineering Attacks - Recognizing, Preventing, and Responding
-tag: cyber security,defence against the dark arts
+tag: cyber-security,defence-against-the-dark-arts
 author: Aazar
 date: 2023-12-17
 ---

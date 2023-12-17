@@ -1,6 +1,6 @@
 ---
 title: Which Profession Is Celebrated More By Society? A Data-Driven Dive into Madame Tussauds
-tag: data_analysis,python
+tag: data-analysis,python
 author: Aazar
 date: 2023-07-17
 ---
