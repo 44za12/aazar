@@ -1,6 +1,6 @@
 ---
 title: Introducing 'Defence Against the Dark Arts' Series and 'horcrux'
-tag: defence-against-the-dark-arts, social-engineering
+tag: defence-against-the-dark-arts,social-engineering
 author: Aazar
 date: 2023-12-17
 ---
