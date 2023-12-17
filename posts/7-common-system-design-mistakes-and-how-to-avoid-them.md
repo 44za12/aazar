@@ -1,6 +1,6 @@
 ---
 title: 7 Common System Design Mistakes and How to Avoid Them
-tag: programming,system_design
+tag: programming,system design
 author: Aazar
 date: 2023-03-12
 ---

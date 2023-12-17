@@ -2,7 +2,7 @@
 title: Unmasking Social Engineering Attacks - Recognizing, Preventing, and Responding
 tag: cyber security,defence against the dark arts
 author: Aazar
-date: 2023-03-29
+date: 2023-12-17
 ---
 
 In the ever-evolving landscape of cyber threats, social engineering attacks stand out for their focus on exploiting human psychology rather than targeting technical vulnerabilities. As these attacks become increasingly sophisticated, it is crucial for individuals and organizations to understand the nature of social engineering, recognize common tactics, and implement effective defense strategies. In this blog post, we'll delve into the world of social engineering attacks, explore various types, and discuss how to prevent and respond to them.

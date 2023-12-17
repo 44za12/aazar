@@ -2,7 +2,7 @@
 title: Deepfake Attacks - Detection, Prevention, and Awareness
 tag: cyber security,defence against the dark arts
 author: Aazar
-date: 2023-03-21
+date: 2023-12-17
 ---
 
 Deepfake technology has evolved rapidly in recent years, enabling the creation of incredibly convincing manipulated images, videos, and audio recordings. With the increased sophistication of deepfake techniques, cybercriminals are finding new ways to exploit this technology for nefarious purposes. In this blog post, we'll discuss the growing threat of deepfake attacks, explore detection and prevention strategies, and emphasize the importance of raising awareness about this emerging cyber threat.
